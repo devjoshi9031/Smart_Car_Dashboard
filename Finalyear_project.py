@@ -116,7 +116,6 @@ def message(face_names):
         name = face_names[0]
     elif face_names==[Unknown]:
         name = face_names[0]
-    #!/usr/bin/env python
     import urllib.request
     import urllib.parse
     import time
@@ -154,7 +153,7 @@ Dev_face_encoding = face_recognition.face_encodings(Dev_image)[0]
 saloni_image = face_recognition.load_image_file("/home/pi/photos/saloni.JPG")
 saloni_face_encoding = face_recognition.face_encodings(saloni_image)[0]
 
-# Load a second picture whose face has to be recognised
+# Load the third picture whose face has to be recognised
 nayan_image = face_recognition.load_image_file("/home/pi/photos/nayan.jpg")
 nayan_face_encoding = face_recognition.face_encodings(nayan_image)[0]
 
